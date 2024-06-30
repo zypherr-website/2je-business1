@@ -1,0 +1,77 @@
+@import url(./style.css);
+
+.hero-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding: 16rem 0;
+    min-height: 130vh;
+    background: url(../imgs/hero-img.jpg)no-repeat, #626262;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    overflow: hidden;
+}
+
+.hero-section .video-bg{
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    opacity: .4;
+    z-index: -1;
+}
+
+.hero-section .div h1{
+    font-size: 5rem;
+    margin-bottom: 3.6rem;
+}
+.hero-section .div p{
+    font-size: 2rem;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+}
+
+.hero-section .div a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 2rem 2.2rem;
+    margin-inline: .5rem;
+    background: darkgoldenrod;
+    border: 1.5px solid darkgoldenrod;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+}
+.hero-section .div a:hover, .hero-section .div .b2{
+    color: #222;
+    background: #fff;
+    border-color: #fff;
+}
+.hero-section .div .b2{
+    color: #fff;
+    background: transparent;
+}
+.hero-section .div .b2:hover{
+    color: #fff;
+    background: darkgoldenrod;
+    border: 1.5px solid darkgoldenrod;
+}
+
+/* MEDIA */
+@media(max-width: 800px){
+    .hero-section{
+        padding: 16rem 5%;
+    }
+}
+
+@media(max-width: 400px){
+    .hero-section .div a{
+        display: block;
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,141 @@
+@import url(./style.css);
+
+input{
+    font-size: 2rem;
+    width: 300px;
+    padding: 1rem 2rem;
+    margin: 0 1rem 1rem 0;
+    background: #000;
+    color-scheme: dark;
+    border: .2px solid #fff;
+}
+input:focus{
+    background: #222;
+    outline-width: thin;
+}
+
+textarea{
+    resize: none;
+    width: 300px;
+    height: 60px;
+    padding: 1rem;   
+}
+button{
+    width: 300px;
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+    font-weight: 600;
+    padding: 2rem 6rem;
+    margin: 1rem 0;
+    background: goldenrod;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+button:hover{
+    background: #fff;
+    color: #222;
+}
+
+.container{
+    padding: 2.5rem 6%;
+    border-bottom: 2px solid #fff;
+}
+
+.container .div{
+    display: flex;
+    gap: 6%;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.container .div .left img{
+    width: 360px;
+    border: 1.6px solid #fff;
+    border-radius: 2px;
+}
+.container .div .left .francc{
+    height: 350px;
+}
+
+.container .div .socials{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+.container .div .socials i{
+    font-size: 2rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: .5rem;
+    margin-right: 1.5rem;
+    transition: all .5s ease;
+}
+.container .div .socials .fb:hover{
+    color: #2770ed;
+    border-color: #2770ed;
+    box-shadow: 0 0 20px skyblue;
+}
+.container .div .socials .ig:hover{
+    color: #ce576b;
+    border-color: #ce576b;
+    box-shadow: 0 0 20px skyblue;
+}
+.container .div .socials .x:hover{
+    color: #000;
+    background: #fff;
+    border-color: #000;
+    box-shadow: 0 0 20px #fff;
+}
+.container .div .socials .yt:hover{
+    color: #de0808;
+    border-color: #de0808;
+    box-shadow: 0 0 20px #de0808;
+}
+.container .div .socials .sp:hover{
+    color: #05a905;
+    border-color: #05a905;
+    box-shadow: 0 0 20px #05a905;
+}
+.container .div .socials .tk:hover{
+    color: #1fd4e1;
+    border-color: pink;
+    box-shadow: 0 0 20px pink;
+}
+
+.container .div .right h2{
+    font-size: 4rem;
+}
+.container .div .right p{
+    margin: 2rem 0 1.6rem;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* CONSULTATION MEDIA */
+@media (max-width: 800px){
+    .container .div{
+        flex-direction: column;
+    }
+    .container .div .left, .container .div .right{
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    
+    .container .div .left img{
+        max-width: 100%;
+        max-height: 500px;
+    }
+    .container .div .left .francc{
+        max-height: fit-content;
+    }
+    input, textarea, button{
+        width: 100%;
+    }
+    textarea{
+        height: 100px;
+    }
+}

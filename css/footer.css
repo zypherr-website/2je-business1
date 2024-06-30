@@ -1,0 +1,17 @@
+@import url(./style.css);
+
+.footer{
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer img{
+    width: 62px;
+    transition: all .2s ease-in-out;
+}
+.footer img:hover{
+    transform: scale(1.1);
+}
+.footer p{
+    font-size: 1.2rem;
+}

@@ -1,0 +1,57 @@
+@import url(./style.css);
+
+.tg-group{
+    padding: 6.2rem 2%;
+    background: linear-gradient(#000, #000, #222, #000, #111);
+    border-bottom: 2px solid #fff;
+}
+
+.tg-group .div{
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.tg-group .div h2{
+    font-size: 4rem;
+    font-weight: 500;
+    margin: .2rem 0 1.2rem;
+}
+
+.tg-group .small-p{
+    font-size: 2.2rem;
+}
+.tg-group .big-p{
+    font-size: 3.6rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 6rem;
+}
+
+.tg-group .div a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.6rem 2.2rem;
+    background: darkgoldenrod;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+}
+.tg-group .div a:hover{
+    background: #fff;
+    color: #222;
+}
+
+/* TG GROUP MEDIA 460PX */
+@media (max-width: 460px){
+    .tg-group .big-p{
+        font-size: 3.5rem;
+    }
+}
+
+/* TG GROUP MEDIA 435PX */
+@media (max-width: 435px){
+    .tg-group .div h2{
+        font-size: 3.5rem;
+    }
+    .tg-group .big-p{
+        font-size: 3rem;
+    }
+}

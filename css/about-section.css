@@ -1,0 +1,132 @@
+@import url(./style.css);
+
+.about-section{
+    padding: 6.2rem 2%;
+    border-bottom: 2px solid #fff;
+}
+
+.about-section h2{
+    text-align: center;
+    font-size: 5.6rem;
+    font-weight: 600;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin-bottom: 4.6rem;
+}
+.about-section span{
+    font-weight: 400;
+}
+
+.about-section .div{
+    display: flex;
+    gap: 6rem;
+    padding: 6rem 0;
+    /* margin-bottom: 9.9rem; */
+}
+.about-section .div:last-child{
+    margin-bottom: 0;
+}
+
+.about-section .div h3{
+    font-size: 3.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.about-section .div p{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2.2rem;
+}
+.about-section .div p:nth-last-child(2){
+    margin-bottom: 6rem;
+}
+.about-section .div strong{
+    font-weight: 600;
+}
+
+.about-section .div a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.6rem 2.2rem;
+    background: darkgoldenrod;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+}
+.about-section .div a:hover{
+    background: #fff;
+    color: #222;
+}
+
+.about-section .div img{
+    width: 600px;
+    height: 460px;
+    border-radius: 2px;
+    border: 1.6px solid #fff;
+}
+.about-section .div .about-img2{
+    height: 400px;
+}
+.about-section .div .about-img3{
+    height: 400px;
+}
+
+.about-section .vip{
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    color: #222;
+    text-align: center;
+    border-radius: 5px;
+}
+.about-section .vip p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.about-section .vip a{
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+/* ABOUT SECTION MEDIA 800PX */
+@media(max-width: 800px){
+    .about-section{
+        padding: 6.2rem 5%;
+    }
+    .about-section h2{
+        font-size: 5rem;
+    }
+    .about-section .div h3{
+        font-size: 3.3rem;
+    }
+    .about-section .div p{
+        font-size: 1.7rem;
+    }
+    .about-section .div{
+        flex-direction: column;
+    }
+    .about-section .div img{
+        max-width: 100%;
+        height: fit-content;
+    }
+    .about-section .div .about-img2{
+        height: fit-content;
+    }
+    .about-section .div .about-img3{
+        height: fit-content;
+    }
+}
+
+/* ABOUT SECTION MEDIA 1000PX */
+@media(max-width: 1200px){
+    .about-section .div:nth-child(odd){
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-section .div:nth-child(even){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about-section .div img{
+        max-width: 100%;
+    }
+}
