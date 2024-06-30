@@ -29,7 +29,8 @@
 }
 
 .join-group a{
-    font-size: 1.6rem;
+    font-size: 2rem;
+    padding: 2rem 2.2rem;
     font-weight: 500;
     padding: 2rem 2.2rem;
     background: darkgoldenrod;
