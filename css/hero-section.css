@@ -7,9 +7,9 @@
     align-items: center;
     text-align: center;
     border-bottom: 2px solid #fff;
-    padding: 16rem 0;
-    min-height: 130vh;
-    background: url(../imgs/hero-img.jpg)no-repeat, #626262;
+    padding: 16rem 2rem;
+    min-height: 120vh;
+    /* background: url(../imgs/hero-img.jpg)no-repeat, #626262; */
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
@@ -65,7 +65,7 @@
 /* MEDIA */
 @media(max-width: 800px){
     .hero-section{
-        padding: 16rem 5%;
+        padding: 12rem 2rem;
     }
 }
 
